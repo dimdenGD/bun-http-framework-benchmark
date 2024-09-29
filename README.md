@@ -52,9 +52,8 @@ Dump result will be available at `results/[benchmark-name].txt`
 
 This benchmark is tested under the following condition:
 
--   Windows 11 under WSL Debian
--   Intel I7-13700K, DDR5 32GB 5600MHz
--   Arch Linux 6.10.8-arch1-1 (btw I use Arch)
+-   Ubuntu 22.04
+-   AMD Ryzen 5 3600, 64GB RAM
 -   Bun 1.1.27
 -   Node 22.8.0
 -   Deno 1.46.3
