@@ -1,11 +1,11 @@
 import express from 'express'
 
 express()
-	.use(express.json())
+	.set("etag", false)
 	.get('/', (req, res) => {
 		res.setHeader('content-type', 'text/plain').send('Hi')
 	})
-	.post('/json', ({ body }, res) => {
+	.post('/json', express.json(), ({ body }, res) => {
 		res.json(body)
 	})
 	.get('/id/:id', ({ params: { id }, query: { name } }, res) => {
